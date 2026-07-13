@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Analysis &amp; Strategic Business Report — Amr Hossam</title>
+<meta name="description" content="Case study: a Power BI sales dashboard across five countries, paired with an Excel strategic audit — nine ranked problems and a 90-day roadmap.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">Amr <b>Hossam</b></a>
+    <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+    <div class="nav-links">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#profile">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="assets/cv/Amr_Hossam_CV.pdf" class="nav-cta" target="_blank" rel="noopener">Download CV</a>
+    </div>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <div class="eyebrow">Case Study 02</div>
+    <h1>Sales Analysis &amp; Strategic Business Report</h1>
+    <p class="lede">One sales dataset, two deliverables: a 3-page Power BI dashboard across five countries, and a written strategic audit turning the same business into nine ranked problems and a 90-day roadmap.</p>
+    <div class="cs-meta-row">
+      <div class="m"><div class="k">Tools</div><div class="v">Power BI · DAX · Excel · Pivot Tables</div></div>
+      <div class="m"><div class="k">Data</div><div class="v">Public dataset (Kaggle) · 5 countries</div></div>
+      <div class="m"><div class="k">Scope</div><div class="v">3,361 orders · 9 issues diagnosed</div></div>
+      <div class="m"><div class="k">Role</div><div class="v">End-to-end (solo)</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cs-nav-links">
+    <a href="index.html#projects">← Back to projects</a>
+    <a href="project-1.html">← Back to: Indian E-commerce Analysis</a>
+  </div>
+</div>
+
+<main>
+<div class="wrap cs-body">
+  <div class="cs-layout">
+
+    <nav class="cs-toc">
+      <div class="cs-toc-label">On this page</div>
+      <a href="#overview">01 · Overview</a>
+      <a href="#problem">02 · Business Problem</a>
+      <a href="#cleaning">03 · Data Cleaning</a>
+      <a href="#process">04 · Analysis Process</a>
+      <a href="#tools">05 · Tools Used</a>
+      <a href="#dashboard">06 · Dashboard &amp; Report</a>
+      <a href="#insights">07 · Key Insights</a>
+      <a href="#recommendations">08 · Recommendations</a>
+      <a href="#impact">09 · Projected Impact</a>
+    </nav>
+
+    <div class="cs-sections">
+
+      <section class="cs-card reveal" id="overview">
+        <div class="cs-card-head"><div class="cs-card-num">01</div><h2>Overview</h2></div>
+        <p>This project turns one sales dataset into two deliverables. First, a 3-page interactive Power BI dashboard — Overview, Customer, and Product — tracking $13.6M in sales across five countries: Saudi Arabia, Syria, UAE, Iraq and Egypt. Second, a written strategic audit that goes a layer deeper into the same business, built in Excel: nine structural problems, ranked by urgency and impact, each paired with a fix and a 90-day roadmap.</p>
+        <div class="kpi-row" style="margin-top:24px;">
+          <div class="kpi-card"><div class="label">Total Sales</div><div class="value">$13.60M</div></div>
+          <div class="kpi-card"><div class="label">Issues Diagnosed</div><div class="value">9</div></div>
+          <div class="kpi-card"><div class="label">Projected Opportunity</div><div class="value">$7.5M</div></div>
+          <div class="kpi-card"><div class="label">Projected ROI</div><div class="value">622%</div></div>
+        </div>
+      </section>
+
+      <section class="cs-card reveal" id="problem">
+        <div class="cs-card-head"><div class="cs-card-num">02</div><h2>Business Problem</h2></div>
+        <p>With $13.6M in sales spread across five markets and 387 products, there was no single place to see where that revenue actually concentrated, which markets converted best, or who the highest-value customers were. And underneath those visible numbers sat risk that a dashboard alone doesn't surface: suspended orders sitting untracked, customers paying through unverifiable channels, slow deliveries, a dangerous concentration in a single market, and a large low-value customer segment quietly consuming the team's time.</p>
+        <p>The goal was to answer both layers from the same data — how much are we selling and is it completing or cancelling, who is buying and how satisfied are they — and then, one level deeper, which of these patterns are actual business risks worth fixing first.</p>
+      </section>
+
+      <section class="cs-card reveal" id="cleaning">
+        <div class="cs-card-head"><div class="cs-card-num">03</div><h2>Data Cleaning</h2></div>
+        <div class="cs-card-sub">For the dashboard</div>
+        <p>Loaded and modeled directly in Power BI: standardized country and payment-method labels, built a date table to support month-level filtering, and modeled relationships between the Orders, Customers and Products tables — so Overview, Customer, and Product pages could all share the same five slicers (Country, Month, Item, Size, Color) without duplicating logic.</p>
+        <div class="cs-card-sub">For the strategic audit</div>
+        <p>The same underlying business data was cleaned and restructured in Excel: consolidating inconsistent order-status labels into a single suspended / completed / cancelled taxonomy, standardizing currency and date fields, and building pivot tables to segment customers, regions and product categories ahead of the diagnostic pass.</p>
+      </section>
+
+      <section class="cs-card reveal" id="process">
+        <div class="cs-card-head"><div class="cs-card-num">04</div><h2>Analysis Process</h2></div>
+        <p>The dashboard was structured around three linked questions, one per page. <b>Overview:</b> total sales, completion vs. cancellation, and order management by country. <b>Customer:</b> revenue per customer, payment method mix, delivery time, and satisfaction ratings by city. <b>Product:</b> completion and pending rate by item, sales by color, and sales by size — all sharing the same slicers, so a pattern noticed on one page could be cross-checked on another.</p>
+        <p>The strategic audit then took the same business one level deeper: isolating nine specific risk metrics, quantifying their size and revenue exposure, ranking each by urgency — Critical, High, Medium, or Opportunity — and pairing every one with a strategic fix and a measurable recommendation, closing with a single 90-day priority roadmap.</p>
+      </section>
+
+      <section class="cs-card reveal" id="tools">
+        <div class="cs-card-head"><div class="cs-card-num">05</div><h2>Tools Used</h2></div>
+        <p>Two tools, one underlying business — the dashboard lives in Power BI, the audit in Excel.</p>
+        <div class="tag-row" style="margin-top:16px;">
+          <span class="pill"><span class="dot"></span>Power BI Desktop</span>
+          <span class="pill"><span class="dot"></span>DAX</span>
+          <span class="pill"><span class="dot"></span>Data Modeling</span>
+          <span class="pill"><span class="dot"></span>Drill-through &amp; Filtering</span>
+          <span class="pill"><span class="dot"></span>Excel</span>
+          <span class="pill"><span class="dot"></span>Pivot Tables</span>
+          <span class="pill"><span class="dot"></span>Business Audit Methodology</span>
+        </div>
+      </section>
+
+      <section class="cs-card reveal" id="dashboard">
+        <div class="cs-card-head"><div class="cs-card-num">06</div><h2>Dashboard &amp; Report</h2></div>
+        <div class="cs-card-sub">Power BI dashboard</div>
+        <div class="shot"><img src="assets/images/p2-overview.png" alt="Sales Analysis dashboard, Overview page"></div>
+        <div class="shot-caption">Overview — total sales, completion/cancellation, country performance</div>
+        <div class="shot"><img src="assets/images/p2-customer.png" alt="Sales Analysis dashboard, Customer page"></div>
+        <div class="shot-caption">Customer — payment methods, customer ratings, top customers by city</div>
+        <div class="shot"><img src="assets/images/p2-product.png" alt="Sales Analysis dashboard, Product page"></div>
+        <div class="shot-caption">Product — completion rate by item, sales by color and size</div>
+        <div class="cs-card-sub">Strategic audit report</div>
+        <div class="shot"><img src="assets/images/p3-diagnostic.png" alt="Strategic Business Analysis diagnostic report — all 9 problems ranked by priority and impact"></div>
+        <div class="shot-caption">All 9 problems, ranked by priority and business impact, with fix and recommendation for each</div>
+      </section>
+
+      <section class="cs-card reveal" id="insights">
+        <div class="cs-card-head"><div class="cs-card-num">07</div><h2>Key Insights</h2></div>
+
+        <div class="cs-card-sub">From the dashboard</div>
+        <div class="finding-card"><div class="stat">Saudi Arabia leads every market at $4.67M</div><p>Saudi Arabia generated $4,674,666 across 1,177 orders — the top market by revenue, order count and customer count (348), ahead of Syria ($3.28M), UAE ($2.45M), Iraq ($1.85M) and Egypt ($1.36M).</p></div>
+        <div class="finding-card"><div class="stat">Tie and Jeans are the two best-selling products</div><p>Tie ($2,112,997, 1,130 units) and Jeans ($2,053,379, 1,164 units) lead the product board — and Tie also carries the highest completion rate of the top items at 89.9%.</p></div>
+        <div class="finding-card"><div class="stat">Cancellation sits at ~24% almost everywhere</div><p>The cancelled rate barely moves across markets — 23.7% in Saudi Arabia, 23.9% in Syria, 24.4% in UAE, 23.7% in Iraq, 25.3% in Egypt — pointing to a platform-wide pattern rather than a single weak market.</p></div>
+        <div class="finding-card"><div class="stat">Bag and Belt sell well but complete poorly</div><p>Bag ($1.75M) completes at only 63.3% (36.7% pending) and Belt ($961K) at 66.1% (33.9% pending) — both well below Tie, Suit and T-Shirt, which all complete above 89%.</p></div>
+        <div class="finding-card"><div class="stat">Customer satisfaction skews low despite healthy sales</div><p>39.78% of customers rate their experience Low (1–4), versus 30.71% Mid (5–7) and 29.52% High (8–10) — and average delivery time sits at 8.0 days, with an average customer rating of 5.52.</p></div>
+        <div class="finding-card"><div class="stat">Hawala is the single largest payment method</div><p>41.48% of customers pay via Hawala (money transfer), ahead of Debit Card (21.18%), Master Card (20.41%) and Western Union (16.93%) — a notable lean toward manual/informal payment over cards.</p></div>
+
+        <div class="cs-card-sub">From the strategic audit</div>
+        <div class="finding-card"><span class="pill pill-critical" style="margin-bottom:10px;"><span class="dot"></span>Critical</span><div class="stat">Suspended-order rate up to 24%</div><p>808 suspended orders worth $3.2M. Without a daily order-status tracking mechanism, the real loss stays hidden behind the headline revenue figure.</p></div>
+        <div class="finding-card"><span class="pill pill-critical" style="margin-bottom:10px;"><span class="dot"></span>Critical</span><div class="stat">42% of customers pay through unverified channels</div><p>422 customers pay via manual transfer — carrying higher legal and accounting risk and making collection harder.</p></div>
+        <div class="finding-card"><span class="pill pill-high" style="margin-bottom:10px;"><span class="dot"></span>High</span><div class="stat">32% of orders take longer than 10 days to deliver</div><p>1,085 orders ship in 11–15 days, versus only 33% delivered fast, in under 5 days.</p></div>
+        <div class="finding-card"><span class="pill pill-high" style="margin-bottom:10px;"><span class="dot"></span>High</span><div class="stat">Saudi Arabia = 32% of total revenue</div><p>Excessive reliance on a single market creates a shock risk that could affect a third of the entire business at once.</p></div>
+        <div class="finding-card"><span class="pill pill-high" style="margin-bottom:10px;"><span class="dot"></span>High</span><div class="stat">40% of customers are low-value and drain team resources</div><p>397 customers consume 40% of the team's capacity for a return that doesn't justify the actual cost of servicing them.</p></div>
+        <div class="finding-card"><span class="pill pill-medium" style="margin-bottom:10px;"><span class="dot"></span>Medium</span><div class="stat">A visible gap in sales team performance</div><p>Order volume per rep ranges from 154 to 177 a month, revealing the absence of unified performance standards.</p></div>
+        <div class="finding-card"><span class="pill pill-medium" style="margin-bottom:10px;"><span class="dot"></span>Medium</span><div class="stat">No clear pricing structure by size or category</div><p>Per-unit pricing ranges from $85 to $3,445 with no policy preventing ad-hoc negotiation.</p></div>
+        <div class="finding-card"><span class="pill pill-medium" style="margin-bottom:10px;"><span class="dot"></span>Medium</span><div class="stat">60% seasonal swing disrupts inventory planning</div><p>Monthly orders swing between 150 and 240, causing repeated overstocking or shortages.</p></div>
+        <div class="finding-card"><span class="pill pill-opportunity" style="margin-bottom:10px;"><span class="dot"></span>Opportunity</span><div class="stat">Cross-selling is barely exploited</div><p>Customer, order and product data are already linked in the model but not used strategically to drive additional purchases.</p></div>
+      </section>
+
+      <section class="cs-card reveal" id="recommendations">
+        <div class="cs-card-head"><div class="cs-card-num">08</div><h2>Business Recommendations</h2></div>
+
+        <div class="cs-card-sub">From the dashboard</div>
+        <div class="fix-card">
+          <ul>
+            <li>Treat the ~24% cancellation rate as a platform-wide issue rather than a market-specific one, given how consistent it is from Egypt to Saudi Arabia — start by auditing checkout and payment friction rather than individual-market operations.</li>
+            <li>Prioritize fulfillment fixes for Bag and Belt first — they combine strong revenue with the weakest completion rates on the product board.</li>
+            <li>Investigate reconciliation and collection risk on Hawala payments, given they represent the largest single payment method at 41.48% of customers, and consider a small incentive to shift volume toward trackable digital payments.</li>
+            <li>Set a service-level target to bring average delivery time down from 8.0 days, and track its effect on the 5.52 average customer rating.</li>
+            <li>Double down on Saudi Arabia and the Tie/Jeans lines in the near term — they are the clearest, most consistent performers across every page of the dashboard.</li>
+          </ul>
+        </div>
+
+        <div class="cs-card-sub">From the strategic audit</div>
+        <div class="fix-card"><div class="fix-head"><h4>1. Automated daily order-status alerts</h4><span class="pill pill-critical"><span class="dot"></span>Critical</span></div><div class="rec">An automated daily alert system plus an incentive structure tied to it, so suspended orders get followed up before they become dead revenue.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>2. Shift customers onto formal payment</h4><span class="pill pill-critical"><span class="dot"></span>Critical</span></div><div class="rec">A gradual move to official payment with a credit system: a 3% discount for switching to bank transfer, a 1% fee on manual transfers, and a credit classification per customer.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>3. Restructure delivery around a 7-day standard</h4><span class="pill pill-high"><span class="dot"></span>High</span></div><div class="rec">Review carrier contracts and enforce a mandatory 7-day delivery standard, with delays beyond 7 days triggering an automatic 10% customer discount.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>4. Expand into Egypt, Iraq and Syria</h4><span class="pill pill-high"><span class="dot"></span>High</span></div><div class="rec">A distribution hub in Egypt, a trusted coverage partner in Iraq, and a local partnership in Syria — targeting roughly 150 orders/month per new market to dilute reliance on Saudi Arabia.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>5. Segment customers into three tiers</h4><span class="pill pill-high"><span class="dot"></span>High</span></div><div class="rec">Low tier: full automation. Mid tier: periodic follow-up. High tier: a dedicated account manager per 20 clients.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>6. Mentor reps against four clear metrics</h4><span class="pill pill-medium"><span class="dot"></span>Medium</span></div><div class="rec">Pair underperforming reps with top performers and evaluate monthly against quantity, quality, attentiveness and customer satisfaction — with clear financial incentives attached.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>7. Introduce a documented 3-tier pricing structure</h4><span class="pill pill-medium"><span class="dot"></span>Medium</span></div><div class="rec">Pre-set volume discounts by tier, projected to lift net profit margin by 8–12% within 3 months.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>8. Forecast demand and smooth seasonality</h4><span class="pill pill-medium"><span class="dot"></span>Medium</span></div><div class="rec">A statistical forecasting model paired with seasonal pre-order offers, plus a 10% discount in slow months to stabilize revenue.</div></div>
+        <div class="fix-card"><div class="fix-head"><h4>9. Launch a purchase-pattern cross-selling program</h4><span class="pill pill-opportunity"><span class="dot"></span>Opportunity</span></div><div class="rec">Automatically suggest complementary products based on purchase history, aiming to raise average order value by 20% within 6 months.</div></div>
+
+        <p style="margin-top:20px; color:var(--sage);">All nine fixes are sequenced into a single 90-day first executive plan in the full report above.</p>
+      </section>
+
+      <section class="cs-card reveal" id="impact">
+        <div class="cs-card-head"><div class="cs-card-num">09</div><h2>Projected Impact</h2></div>
+        <p>These are the audit's projected figures for its proposed 90-day roadmap — not yet-implemented outcomes.</p>
+        <div class="kpi-row" style="margin-top:20px;">
+          <div class="kpi-card"><div class="label">Total Annual Opportunity</div><div class="value">$7.5M</div></div>
+          <div class="kpi-card"><div class="label">Projected ROI</div><div class="value">622%</div></div>
+          <div class="kpi-card"><div class="label">Problems Analyzed</div><div class="value">9</div></div>
+          <div class="kpi-card"><div class="label">First Executive Plan</div><div class="value">90 days</div></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+</main>
+
+<div class="cs-cta">
+  <div class="wrap cs-cta-inner">
+    <h3>That's both case studies</h3>
+    <div style="display:flex; gap:14px; flex-wrap:wrap;">
+      <a href="index.html#projects" class="btn btn-ghost">All projects</a>
+      <a href="index.html#contact" class="btn btn-primary">Get in touch <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Amr Hossam</span>
+    <a href="index.html">Back to home ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
